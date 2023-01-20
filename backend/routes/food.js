@@ -11,11 +11,17 @@ food.post('/add', async (req, res) => {
 
     try{
         const foodData = new FOOD({
-            foodData: req.body.foodData,
+            foodName: req.body.foodName,
             foodPrice: req.body.foodPrice,
             foodQuantity: req.body.foodQuantity,
             foodImage: req.body.foodImage,
         });
+        /*const foodData = new FOOD({
+            foodName: 'pizza',
+            foodPrice: '12',
+            foodQuantity: '2',
+            foodImage: 'image',
+        });*/
     
         const data = await foodData.save();
         res.status(200).json({id: data.id});

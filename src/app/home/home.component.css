@@ -1,0 +1,48 @@
+body {
+    background-color: #fff;
+  
+  }
+  .masthead {
+    height: 92vh;
+    color: #2f2e41;
+    overflow-y: hidden;
+    min-height: 500px;
+    background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Space Mono', monospace;
+  
+  }
+  
+  .masthead h1 {
+    -webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .lead{
+      color: #2f2e41;
+      font-weight: bold;
+      letter-spacing: 2px;
+  }
+
+  .container{
+    cursor: pointer;
+    
+  }
+
+  .card-body{
+    text-align: center;
+  }
+  
+  
+  h2{
+  
+    font-family: "Kaushan Script", cursive;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color:#2f2e41;
+    text-shadow:#F8C44C 2px 2px 2px;
+  }
+

@@ -1,0 +1,69 @@
+body {
+  background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  }
+  
+  .signup-box {
+    width: 360px;
+    height: 610px;
+    margin: auto;
+    background-color:  rgb(247, 176, 115);
+    border-radius: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 30px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 15px;
+    font-size: 17px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+  input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #e9c969;
+    color: rgb(41, 42, 79);
+    font-size: 17px;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  .para-2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color: #fcfcfb;
+  }
+  
+  

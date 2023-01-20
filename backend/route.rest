@@ -1,0 +1,25 @@
+GET http://localhost:3000/subscribers/
+
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "firstName" : "Thanuuuuu",
+    "lastName" : "Rajapakse",
+    "gender": "female",
+    "email" : "thanu@example.com",
+    "password" : "mypass"
+}
+
+
+###
+
+DELETE http://localhost:3000/subscribers/63c7b7a5a0814924fb2bb44e
+
+
+###
+PATCH http://localhost:3000/subscribers/
+content-Type :application/json

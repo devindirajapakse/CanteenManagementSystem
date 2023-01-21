@@ -35,7 +35,7 @@ const routes: Routes = [
   {path:'admin/viewfeedbacks', component:ViewFeedbacksComponent},
   {path:'admin/edititem', component:EditItemComponent},
   {path:'admin/addfoodqty', component:AddFoodqtyComponent},
-  {path:'dashboard', component:DashboardComponent}
+  {path:'dashboard', component:DashboardComponent},
 
 
 ];

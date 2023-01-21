@@ -24,7 +24,8 @@ import { SignupComponent } from './signup/signup.component';
 import { CustomerNavbarComponent } from './customer-navbar/customer-navbar.component';
 import {MatTableModule} from '@angular/material/table';
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
+
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignupComponent,
     CustomerNavbarComponent,
     CustomerHomeComponent,
-    DashboardComponent,
+    DashboardComponent
+
   ],
   imports: [
     BrowserModule,

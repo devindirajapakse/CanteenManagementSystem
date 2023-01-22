@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <title>Login</title>
-    <link rel="stylesheet" href="login.component.css" />
+    <link rel="stylesheet" href="adminlogin.component.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -15,23 +15,21 @@
   <body>
     <br><br><br><br><br><br>
     <div class="login-box">
-      <h1>Login</h1>
+      <h1>Admin Login</h1>
       <form (submit)="login(form)" #form=ngForm>
         <label>Email</label>
         <input type="email" placeholder="Email" name="email" ngModel/>
         <label>Password</label>
         <input type="password" placeholder="Password" name="password" ngModel/>
-        <br>
         <input type="submit"  value="Submit" />
         <!--<button type="submit">Submit</button>-->
      </form>
     </div>
     <p class="para-2">
-        Not have an Account? <a href="/signup">Sign Up Here</a>
-        <br>
-        Are you an Admin? <a href="/adminlogin">Admin Login</a>
+        Not have an account? <a href="/signup">Sign Up Here</a>
       </p>
     
   </body>
 </html>
+
 

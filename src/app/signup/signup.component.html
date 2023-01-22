@@ -15,18 +15,18 @@
     <div class="signup-box">
       <h1>Sign Up</h1>
       <h4>It's only takes a minute</h4>
-      <form>
+      <form (submit)="signup(form)" #form=ngForm>
         <label>Name</label>
-        <input type="text" placeholder="Enter your Name" />
+        <input type="text" placeholder="Enter your Name" name="name" ngModel/>
         <label>Email</label>
-        <input type="email" placeholder="Enter your Email" />
+        <input type="email" placeholder="Enter your Email" name="email" ngModel/>
         <label>Mobile Number</label>
-        <input type="text" placeholder="Enter your Mobile Number" />
+        <input type="text" placeholder="Enter your Mobile Number" name="mobile" ngModel/>
         <label>Password</label>
-        <input type="password" placeholder="Enter your Password" />
+        <input type="password" placeholder="Enter your Password" name="password" ngModel />
         <label>Confirm Password</label>
-        <input type="password" placeholder="Re-Enter your Password" />
-        <input type="button" value="Submit" />
+        <input type="password" placeholder="Re-Enter your Password" name="cpassword" ngModel/>
+        <input type="submit" value="Submit" />
       </form>
       <p class="para-2">
         Already have an account? <a href="/login">Login here</a>

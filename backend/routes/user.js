@@ -14,7 +14,7 @@ user.post('/signup', async (req, res) => {
             name: req.body.name,
             email: req.body.email,
             mobileNumber: req.body.mobileNumber,
-            
+            password: req.body.password,
         });
     
         const data = await userData.save();
@@ -41,10 +41,10 @@ user.post('/signin', async(req, res)=>{
             return;
         }
 
-        res.status(200).json({ id : data[0]['id']});
+        res.status(200).json({ id : userData[0]['id']});
     }
     catch(error){
-        res.status(400).json({message: error.message})
+        res.status(400).json({message: error.message});
     }
 });
 

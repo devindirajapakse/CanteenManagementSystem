@@ -26,6 +26,8 @@ import {MatTableModule} from '@angular/material/table';
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddcartComponent } from './addcart/addcart.component';
+import { HttpClientModule} from '@angular/common/http';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 
@@ -52,6 +54,7 @@ import { AddcartComponent } from './addcart/addcart.component';
     CustomerHomeComponent,
     DashboardComponent,
     AddcartComponent,
+    AdminloginComponent,
    
 
   ],
@@ -61,7 +64,8 @@ import { AddcartComponent } from './addcart/addcart.component';
     BrowserAnimationsModule,
     MatButtonModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

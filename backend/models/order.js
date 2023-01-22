@@ -1,15 +1,19 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-    quantity: {
+    itemName: {
+        required: true,
+        type: String
+    },
+    itemQuantity: {
         required: true,
         type: Number
     },
-    orderPrice: {
+    itemPrice: {
         required: true,
         type: Number
     },
-    total: {
+    itemTotal: {
         required: true,
         type: Number
     }

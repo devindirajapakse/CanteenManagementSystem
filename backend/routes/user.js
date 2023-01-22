@@ -14,7 +14,7 @@ user.post('/signup', async (req, res) => {
             name: req.body.name,
             email: req.body.email,
             mobileNumber: req.body.mobileNumber,
-            password: req.body.password,
+            
         });
     
         const data = await userData.save();

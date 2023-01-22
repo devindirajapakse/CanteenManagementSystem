@@ -11,9 +11,11 @@ order.post('/add', async (req, res) => {
 
     try{
         const orderData = new ORDER({
-            quantity: req.body.quantity,
-            orderPrice: req.body.orderPrice,
-            total: req.body.total,
+            itemName: req.body.itemName,
+            itemQuantity: req.body.itemQuantity,
+            itemPrice: req.body.itemPrice,
+            itemTotal: req.body. itemTotal,
+            
         });
     
         const data = await orderData.save();

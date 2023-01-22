@@ -25,7 +25,8 @@ import { CustomerNavbarComponent } from './customer-navbar/customer-navbar.compo
 import {MatTableModule} from '@angular/material/table';
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AddcartComponent } from './addcart/addcart.component'
+import { AddcartComponent } from './addcart/addcart.component';
+
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { AddcartComponent } from './addcart/addcart.component'
     CustomerNavbarComponent,
     CustomerHomeComponent,
     DashboardComponent,
-    AddcartComponent
+    AddcartComponent,
+   
 
   ],
   imports: [

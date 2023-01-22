@@ -48,4 +48,16 @@ user.post('/signin', async(req, res)=>{
     }
 });
 
+// user.get('/:id', async (req, res) => {
+//     try{
+//         const foodData = await USER.findById(req.params.id);
+
+//         res.status(200).send(foodData);
+//     }
+//     catch{
+//         res.status(400).json({ message: error.message });
+//     }
+// });
+
+
 module.exports = user;

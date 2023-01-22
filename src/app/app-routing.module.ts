@@ -16,6 +16,7 @@ import { EditItemComponent } from './admin/edit-item/edit-item.component';
 import { AddFoodqtyComponent } from './admin/add-foodqty/add-foodqty.component';
 import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AddcartComponent } from './addcart/addcart.component';
 
 
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path:'admin/edititem', component:EditItemComponent},
   {path:'admin/addfoodqty', component:AddFoodqtyComponent},
   {path:'dashboard', component:DashboardComponent},
+  {path:'addcart', component:AddcartComponent}
 
 
 ];

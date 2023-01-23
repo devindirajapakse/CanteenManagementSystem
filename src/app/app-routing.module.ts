@@ -21,6 +21,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 
+
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'login', component:LoginComponent},
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path:'dashboard', component:DashboardComponent},
   {path:'addcart', component:AddcartComponent},
   {path:'adminlogin', component:AdminloginComponent},
+  
 
 
 ];

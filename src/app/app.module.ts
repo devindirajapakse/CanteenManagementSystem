@@ -31,6 +31,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     DashboardComponent,
     AddcartComponent,
     AdminloginComponent,
+   
    
 
   ],

@@ -10,25 +10,33 @@
     <body>
         <section></section>
         <div class="container">
-            <form #form=ngForm>
+            <form>
                 <h1>Add Item</h1>
                 <br>
                 <div class="id">
-                    <input type="text" placeholder="Food Name" name="foodName" ngModel>
+                    <input type="text" placeholder="Food Name">
                     <i class="far fa-user"></i>
                 </div>
 
                 <div class="id">
-                    <input type="text" placeholder="Food Price" name="foodPrice" ngModel>
+                    <input type="text" placeholder="Food Price">
                 </div>
 
                 <div class="id">
-                    <input type="number" placeholder="Food Quantity" name="foodQuantity" ngModel>
+                    <input type="number" placeholder="Food Quantity" >
                 </div>
                 
-               <input type="image" cols="15" rows="5" placeholder="Food Image" name="foodImage" ngModel>
+                <div class="file">
+                    <form action="/action_page.php">
+                        <input type="file" id="myFile" name="filename" placeholder="choose file">
+                        
+                    </form>
+                </div>
+           
+
+                <button>Add</button>
                
-               <input type="submit" value="submit" />
+               
             </form>
         </div>
     </body>

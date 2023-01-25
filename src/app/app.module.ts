@@ -28,6 +28,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddcartComponent } from './addcart/addcart.component';
 import { HttpClientModule} from '@angular/common/http';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 
@@ -56,6 +57,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     DashboardComponent,
     AddcartComponent,
     AdminloginComponent,
+    PaymentComponent,
    
    
 

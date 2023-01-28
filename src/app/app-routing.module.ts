@@ -18,7 +18,7 @@ import { CustomerHomeComponent } from './customer-home/customer-home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddcartComponent } from './addcart/addcart.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-import { PaymentComponent } from './payment/payment.component';
+
 
 
 
@@ -42,7 +42,7 @@ const routes: Routes = [
   {path:'dashboard', component:DashboardComponent},
   {path:'addcart', component:AddcartComponent},
   {path:'adminlogin', component:AdminloginComponent},
-  {path:'payment', component:PaymentComponent},
+  
   
 
 

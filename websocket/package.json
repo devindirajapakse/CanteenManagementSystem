@@ -1,11 +1,20 @@
 {
-  "name": "rtm",
-  "version": "0.0.1",
+  "name": "wassup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "nodemon server",
+    "serve": "node server"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "ws": "^7.5.9"
+    "socket.io": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }

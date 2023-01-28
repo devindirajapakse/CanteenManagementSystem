@@ -1,49 +1,26 @@
-<title>Chat</title>
-<h1>FoodHour Messaging</h1>
-<pre id="messages" style="height: 400px; overflow: scroll"></pre>
-<input type="text" id="messageBox" placeholder="Type your message here" style="display: block; width: 100%; margin-bottom: 10px; padding: 10px;" />
-<button id="send" title="Send Message!" style="width: 100%; height: 30px;">Send Message</button>
+<!DOCTYPE html>
+<html lang="en">
 
-<script>
-  (function() {
-    const sendBtn = document.querySelector('#send');
-    const messages = document.querySelector('#messages');
-    const messageBox = document.querySelector('#messageBox');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHour Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
 
-    let ws;
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/src/assets/images/logo.jpg" alt="">
+            <h1>FoodHour Messaging</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message here..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
 
-    function showMessage(message) {
-      messages.textContent += `\n\n${message}`;
-      messages.scrollTop = messages.scrollHeight;
-      messageBox.value = '';
-    }
-
-    function init() {
-      if (ws) {
-        ws.onerror = ws.onopen = ws.onclose = null;
-        ws.close();
-      }
-
-      ws = new WebSocket('ws://localhost:5000');
-      ws.onopen = () => {
-        console.log('Connection opened!');
-      }
-      ws.onmessage = ({ data }) => showMessage(data);
-      ws.onclose = function() {
-        ws = null;
-      }
-    }
-
-    sendBtn.onclick = function() {
-      if (!ws) {
-        showMessage("No WebSocket connection :(");
-        return ;
-      }
-
-      ws.send(messageBox.value);
-      showMessage(messageBox.value);
-    }
-
-    init();
-  })();
-</script>
+</html>
